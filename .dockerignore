@@ -1,4 +1,7 @@
-  .git
-  node_modules
-  .next
-
+.git
+node_modules
+.next
+*.log
+*.zip
+Dockerfile
+docker-compose.yml
