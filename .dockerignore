@@ -3,6 +3,5 @@ node_modules
 .next
 *.log
 *.zip
-Dockerfile
 docker-compose.yml
-.env
+
