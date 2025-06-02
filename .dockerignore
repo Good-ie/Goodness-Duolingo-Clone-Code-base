@@ -5,3 +5,4 @@ node_modules
 *.zip
 Dockerfile
 docker-compose.yml
+.env
