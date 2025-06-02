@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Duolingo Clone
 
 This project is a clone of Duolingo, built using modern web technologies. It features a comprehensive set of functionalities including an admin dashboard, Stripe integration for premium features, and SSO authentication with Google.
@@ -60,3 +61,7 @@ Contributions are welcome! Please follow these steps: <br />
 3. Make your changes and commit them.
 4. Push to your branch.
 5. Open a pull request.
+=======
+# Goodness-Duolingo-Clone-Code-base
+Duolingo docker
+>>>>>>> 9174b571fa532db0d024e5fa15edb2d4b3b6a1a3
