@@ -3,5 +3,5 @@ node_modules
 .next
 *.log
 *.zip
-docker-compose.yml
+public
 
