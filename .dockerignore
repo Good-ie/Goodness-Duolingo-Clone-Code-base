@@ -1,7 +1,9 @@
-.git
 node_modules
-.next
+.dockerignore
+Dockerfile
+.git
+.gitignore
+README.md
 *.log
-*.zip
-public
-
+*.md
+.env
