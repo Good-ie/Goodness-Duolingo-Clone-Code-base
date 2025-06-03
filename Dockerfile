@@ -1,24 +1,19 @@
-# Stage 1: Build the app
-FROM node:18-alpine AS builder
+# 1. Base image
+FROM node:18
 
+# 2. Set working directory
 WORKDIR /app
 
+# 3. Copy dependencies and install
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
+# 4. Copy the rest of the app
 COPY . .
+
+# 5. Build the app (add this!)
 RUN npm run build
 
-# Stage 2: Run the app
-FROM node:18-alpine
-
-WORKDIR /app
-
-# Copy only the necessary files from builder stage
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-
+# 6. Expose port and start
 EXPOSE 3000
 CMD ["npm", "start"]
