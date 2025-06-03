@@ -6,4 +6,3 @@ Dockerfile
 README.md
 *.log
 *.md
-.env
